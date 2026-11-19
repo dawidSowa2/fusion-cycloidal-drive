@@ -1,6 +1,6 @@
 # Cycloidal Drive add-in for Fusion
 
-Generates a complete 1, 2 or 3 disc cycloidal reducer for a stepper motor.
+Generates a complete 1, 2 or 3 disc cycloidal reducer for a stepper motor. Made using Claude.
 
 ## Install
 1. Copy this whole `CycloidalDrive` folder to
