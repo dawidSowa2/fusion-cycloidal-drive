@@ -1,0 +1,13 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "addin",
+  "id": "3909c50d-18fd-4602-9e26-dae785cc07e2",
+  "author": "",
+  "description": {
+    "": "Generates 1, 2 or 3 disc cycloidal drives (discs, eccentric cam, ring pins, housing, NEMA base plate, output carrier)."
+  },
+  "version": "1.0.0",
+  "runOnStartup": true,
+  "supportedOS": "windows|mac",
+  "editEnabled": true
+}
