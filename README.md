@@ -117,3 +117,6 @@ The geometry tests check that:
 `test_commands_stub.py` runs every command's modelling code against a stand-in for Fusion's API, with
 every part toggle and motor choice. That catches code errors, but only real Fusion shows the
 final geometry.
+
+## License
+MIT, see [LICENSE](LICENSE).
