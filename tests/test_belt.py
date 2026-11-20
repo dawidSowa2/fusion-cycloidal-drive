@@ -3,7 +3,7 @@ import os
 import sys
 import unittest
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'FusionReducers'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'RoboticReducers'))
 import belt_geometry as bg  # noqa: E402
 
 def _cross(o, a, b):

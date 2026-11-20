@@ -3,7 +3,7 @@ import os
 import sys
 import unittest
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'FusionReducers'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'RoboticReducers'))
 import capstan_geometry as cpg  # noqa: E402
 
 DEFAULTS = dict(cable='Dyneema / braided line', cableDiameter=0.1, drumDiameter=1.4, ratio=8.0,

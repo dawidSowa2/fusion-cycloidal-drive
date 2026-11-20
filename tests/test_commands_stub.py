@@ -15,13 +15,13 @@ def load_addin():
     adsk = mock.MagicMock()
     for name, mod in (('adsk', adsk), ('adsk.core', adsk.core), ('adsk.fusion', adsk.fusion)):
         sys.modules[name] = mod
-    for m in [k for k in sys.modules if k.startswith('FusionReducers')]:
+    for m in [k for k in sys.modules if k.startswith('RoboticReducers')]:
         del sys.modules[m]
     # Register the add-in folder as a package, the way Fusion loads it.
-    package = types.ModuleType('FusionReducers')
-    package.__path__ = [os.path.join(ROOT, 'FusionReducers')]
-    sys.modules['FusionReducers'] = package
-    pkg = importlib.import_module('FusionReducers.FusionReducers')
+    package = types.ModuleType('RoboticReducers')
+    package.__path__ = [os.path.join(ROOT, 'RoboticReducers')]
+    sys.modules['RoboticReducers'] = package
+    pkg = importlib.import_module('RoboticReducers.RoboticReducers')
     comp = mock.MagicMock()
     comp.occurrences.addNewComponent.return_value.component = comp
     sketch = comp.sketches.add.return_value

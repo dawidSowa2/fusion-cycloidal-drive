@@ -1,4 +1,6 @@
-# Fusion Reducers
+# Robotic Reducers
+
+**Capstan, belt and cycloidal drives for robot joints, generated in Fusion.**
 
 A Fusion add-in that generates complete, printable gearboxes for stepper motors. It adds
 three commands under **SOLID > CREATE**:
@@ -11,15 +13,16 @@ three commands under **SOLID > CREATE**:
 
 Each command opens a dialog with a live **Summary** that shows the ratio and key sizes and flags
 any problems. **Generate** is disabled while there is an error. Each command remembers the
-settings you used last (in `FusionReducers/settings/`).
+settings you used last (in `RoboticReducers/settings/`).
 
 ## Install
-1. Copy the **`FusionReducers`** folder (the one inside this repo) to
+1. Copy the **`RoboticReducers`** folder (the one inside this repo) to
    - macOS: `~/Library/Application Support/Autodesk/Autodesk Fusion 360/API/AddIns/`
    - Windows: `%APPDATA%\Autodesk\Autodesk Fusion 360\API\AddIns\`
-2. In Fusion, press **Shift+S** (or go to **Utilities > Add-Ins**). On the **Add-Ins** tab, select *FusionReducers*, tick
+2. In Fusion, press **Shift+S** (or go to **Utilities > Add-Ins**). On the **Add-Ins** tab, select *RoboticReducers*, tick
    *Run on Startup*, and click **Run**.
-3. If you used the older *CycloidalDrive* add-in, stop it and remove it. Fusion Reducers includes it.
+3. If you used an earlier version (*CycloidalDrive* or *FusionReducers*), stop it, untick its *Run on Startup*, and remove
+   its folder. Robotic Reducers includes everything they did.
 
 All generators build the motor at a plate whose top face is Z = 0. The motor sits below the plate.
 
@@ -93,8 +96,8 @@ bearing between the cycloidal output and its housing.
 
 ## Repository layout
 ```
-FusionReducers/        <- the add-in folder you copy into Fusion
-  FusionReducers.py      entry point, registers the three commands
+RoboticReducers/       <- the add-in folder you copy into Fusion
+  RoboticReducers.py     entry point, registers the three commands
   fusion_ui.py           shared dialog framework and modelling helpers
   *_command.py           one per drive: parameters, summary and modelling
   *_geometry.py          pure-Python math and validation (no Fusion needed)

@@ -4,7 +4,7 @@ import os
 import sys
 import unittest
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'FusionReducers'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'RoboticReducers'))
 import cycloid_geometry as cg  # noqa: E402
 
 DESIGNS = [  # (pins, ring radius, pin radius, eccentricity) in cm

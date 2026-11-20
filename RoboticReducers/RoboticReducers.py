@@ -1,5 +1,5 @@
 """
-Fusion Reducers add-in: gearbox generators for stepper motors.
+Robotic Reducers add-in: gearbox generators for stepper motors.
 
 Adds three commands to SOLID > CREATE:
   - Cycloidal Drive  (1, 2 or 3 discs)
@@ -26,7 +26,7 @@ def run(context):
         for cmd in COMMANDS:
             cmd.register(ui, panel)
     except Exception:
-        ui.messageBox('Fusion Reducers failed to start:\n' + traceback.format_exc())
+        ui.messageBox('Robotic Reducers failed to start:\n' + traceback.format_exc())
 
 
 def stop(context):
@@ -37,4 +37,4 @@ def stop(context):
             cmd.unregister(ui, panel)
         fusion_ui.clear_handlers()
     except Exception:
-        ui.messageBox('Fusion Reducers failed to stop:\n' + traceback.format_exc())
+        ui.messageBox('Robotic Reducers failed to stop:\n' + traceback.format_exc())

@@ -1,0 +1,13 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "addin",
+  "id": "aaa75da8-1814-4b94-9697-8229fe890845",
+  "author": "",
+  "description": {
+    "": "Robotic Reducers - gearbox generators for stepper motors: cycloidal drives (1-3 discs), GT2/HTD belt drives and capstan cable drives for robot arm joints."
+  },
+  "version": "2.1.0",
+  "runOnStartup": true,
+  "supportedOS": "windows|mac",
+  "editEnabled": true
+}
