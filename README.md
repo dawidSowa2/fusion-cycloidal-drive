@@ -2,7 +2,7 @@
 
 **Capstan, belt and cycloidal drives for robot joints, generated in Fusion.**
 
-A Fusion add-in that generates complete, printable gearboxes for stepper motors. It adds
+A Fusion add-in that generates complete, printable gearboxes for stepper motors. Made using Claude. It adds
 three commands under **SOLID > CREATE**:
 
 | Command | Ratio | Best for |
