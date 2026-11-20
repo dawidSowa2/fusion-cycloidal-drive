@@ -1,0 +1,13 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "addin",
+  "id": "b72fc688-038e-4e3e-998a-ff02e57968ca",
+  "author": "",
+  "description": {
+    "": "Gearbox generators for stepper motors: cycloidal drives (1-3 discs), GT2/HTD belt drives and capstan cable drives for robot arm joints."
+  },
+  "version": "2.0.0",
+  "runOnStartup": true,
+  "supportedOS": "windows|mac",
+  "editEnabled": true
+}

@@ -3,3 +3,5 @@ __pycache__/
 .DS_Store
 # per-user dialog settings written by the add-in
 last_settings.json
+# per-user dialog settings written by the add-in
+settings/
